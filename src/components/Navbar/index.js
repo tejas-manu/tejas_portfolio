@@ -19,7 +19,7 @@ const Navbar = () => {
           <NavLink href='#skills'>Skills</NavLink>
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#education'>Education</NavLink>
-          <NavLink href='#certificate'>Certifications</NavLink>
+          <NavLink href='#certifications'>Certifications</NavLink>
           {/* <NavLink href='#blog'>Blog</NavLink> */}
         </NavItems>
         {
