@@ -9,10 +9,13 @@ export const Bio = {
     resume:"https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/tejas-manu-s-5291921a0",
     twitter: "https://x.com/tejas_manu?t=1QiblLdm_lEtvCW4o0KZWg&s=09",
-    insta: "https://instagram.com/tm_tejasmanu__?igshid=OGQ5ZDc2ODk2ZA==",
-    facebook: "https://www.facebook.com/tejas.manu.07?mibextid=ZbWKwL",
+    insta: "https://www.instagram.com/",
+    facebook: "https://www.facebook.com/",
   };
   
+  // instagram : https://instagram.com/tm_tejasmanu__?igshid=OGQ5ZDc2ODk2ZA==
+  // facebook : https://www.facebook.com/tejas.manu.07?mibextid=ZbWKwL
+
   export const skills = [
     {
       title: "My Skills",
