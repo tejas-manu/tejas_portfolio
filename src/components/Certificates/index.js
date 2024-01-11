@@ -12,11 +12,11 @@ import {Container, Wrapper, Title, Desc, TimelineSection} from "./Certificates_s
 
 const index = () => {
     return (
-        <Container id="certificate">
+        <Container id="certifications">
             <Wrapper>
-                <Title>Certificate</Title>
+                <Title>Certifications</Title>
                 <Desc>
-                    These are the following certificates that I have recieved till date.
+                    Accomplished and certified in the following areas.
                 </Desc>
                 <TimelineSection>
                     <Timeline>
