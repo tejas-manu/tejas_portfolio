@@ -17,6 +17,7 @@ export const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
+    text-align: justify;
     color: ${({ theme }) => theme.text_primary + 99};
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
