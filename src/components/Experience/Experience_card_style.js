@@ -17,6 +17,8 @@ export const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
+    text-align:left;
+    text-align-last:left;
     color: ${({ theme }) => theme.text_primary + 99};
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
@@ -31,6 +33,7 @@ max-width: 100%;
 -webkit-line-clamp: 4;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
+text-align:justify;
 `
 export const ItemWrapperResp = styled.div`
     display: -webkit-box;
@@ -46,6 +49,7 @@ export const ItemWrapperResp = styled.div`
 export const Resp = styled.div`
     font-size: 15px;
     font-weight: 400;
+    text-align: justify;
 
     color: ${({ theme }) => theme.text_primary + 99};
     @media only screen and (max-width: 768px){

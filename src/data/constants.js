@@ -23,12 +23,12 @@ export const Bio = {
         {
           name: "AWS",
           image:
-            "https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_200_200/0/1670264051233/amazon_web_services_logo?e=1710374400&v=beta&t=Sqejsy3fxoQ8h5jA-23GfDeHW17GErf7uzCD5VvhHu8",
+            "https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_200_200/0/1670264051233/amazon_web_services_logo?e=1720051200&v=beta&t=SC9ilgpx6Rf1KY5C2ZSTbLLeF4jpLwziZ-mml6askow",
         },
         {
           name: "GCP",
           image:
-            "https://media.licdn.com/dms/image/C560BAQFIFLR7jxm2lg/company-logo_200_200/0/1630644546845/google_cloud_logo?e=1710374400&v=beta&t=NDSgzVhtMoRh6H0GhSjdXxfZPF5XPkmoslKonawkbhc",
+            "https://media.licdn.com/dms/image/C560BAQFIFLR7jxm2lg/company-logo_200_200/0/1630644546845/google_cloud_logo?e=1720051200&v=beta&t=nKoMp0M8jPy5xvRBtaaKATZ4N1TB0MONBrUx4eJq1Ik",
         },
         {
           name: "Github Actions",
@@ -131,15 +131,15 @@ export const Bio = {
   export const experiences = [
     {
       id: 0,
-      img: "https://media.licdn.com/dms/image/C560BAQE-cwaObx8Iag/company-logo_100_100/0/1630649720006/hashedin_logo?e=1710374400&v=beta&t=Hk4MX09OW7XFqj7RsODdUnCrKHpdUx8ZOH2X_eOAxr8",
+      img: "https://media.licdn.com/dms/image/C560BAQE-cwaObx8Iag/company-logo_200_200/0/1630649720006/hashedin_logo?e=1720051200&v=beta&t=80l3at9j0KL5qDCtlhop1opOAji-ovEO27Toqok-5eU",
       role: "Devops Engineer I",
       company: "HASHEDIN BY DELOITTE, BANGALORE, KARNATAKA, INDIA",
       date: "Sept 2022 - July 2023",
       desc: "Performed various Devops tasks. Deployed application on multiple Cloud platforms and wrote scripts to implement CICD. Led multiple teams in an internal project which involved deploying application on AWS and GCP. Was responsible as L2 for few products in the same project.",
       resp:[
-        "Pioneered the development of robust Continuous Integration/Continuous Deployment (CI/CD) pipelines, optimizing software development processes for efficiency and speed.",
+        "Spearheaded the establishment of CICD automation pipelines, optimizing development processes.",
         "Pioneered the setup of a mono repo, consolidating 30+ projects in a single repository.",
-        "Introduced and implemented the first OIDC setup across the organization, enabling authentication and resource provisioning on AWS and GCP through GitHub Actions without the need for access keys.",
+        "Introduced and implemented the first OIDC setup across the organization, enabling authentication and resource provisioning on AWS and GCP through GitHub Actions without needing access keys.",
         "Proficiently deployed applications on GCP and AWS, ensuring user accessibility.",
         "Orchestrated maintenance and monitoring protocols, ensuring optimal performance.",
         "Implemented IaC practices using Terraform and Ansible, enhancing efficiency.",
@@ -164,7 +164,7 @@ export const Bio = {
     },
     {
       id: 1,
-      img: "https://media.licdn.com/dms/image/C560BAQE-cwaObx8Iag/company-logo_100_100/0/1630649720006/hashedin_logo?e=1710374400&v=beta&t=Hk4MX09OW7XFqj7RsODdUnCrKHpdUx8ZOH2X_eOAxr8",
+      img: "https://media.licdn.com/dms/image/C560BAQE-cwaObx8Iag/company-logo_200_200/0/1630649720006/hashedin_logo?e=1720051200&v=beta&t=80l3at9j0KL5qDCtlhop1opOAji-ovEO27Toqok-5eU",
       role: "Associate Devops Engineer",
       company: "HASHEDIN BY DELOITTE, BANGALORE, KARNATAKA, INDIA",
       date: "May 2022 - Sept 2022",
@@ -196,13 +196,13 @@ export const Bio = {
     },
     {
       id: 2,
-      img: "https://media.licdn.com/dms/image/C560BAQE-cwaObx8Iag/company-logo_100_100/0/1630649720006/hashedin_logo?e=1710374400&v=beta&t=Hk4MX09OW7XFqj7RsODdUnCrKHpdUx8ZOH2X_eOAxr8",
+      img: "https://media.licdn.com/dms/image/C560BAQE-cwaObx8Iag/company-logo_200_200/0/1630649720006/hashedin_logo?e=1720051200&v=beta&t=80l3at9j0KL5qDCtlhop1opOAji-ovEO27Toqok-5eU",
       role: "Associate SDET Engineer",
       company: "HASHEDIN BY DELOITTE, BANGALORE, KARNATAKA, INDIA",
       date: "March 2022 - June 2022",
       desc: "Executed diverse testing procedures to assess application performance and pinpoint defects. Contributed to quality assurance by meticulously validating application functionality. Implemented test automation using a variety of testing tools to streamline processes and bolster overall testing effectiveness",
       resp:[
-        "Executed diverse testing methodologies on developing applications to ensure their reliability and functionality.",
+        "Contributed to the creation and execution of robust test plans, ensuring application reliability.",
         "Automated test cases using Selenium, Junit, and Postman, streamlining testing processes.",
         "Contributed to the creation and execution of automated test scripts to enhance the overall testing framework.",
         "Demonstrated leadership by successfully leading a team of 6 during the final demo project.",
@@ -223,7 +223,7 @@ export const Bio = {
     },
     {
       id: 3,
-      img: "https://media.licdn.com/dms/image/C5603AQFdnuv01Vnhnw/profile-displayphoto-shrink_800_800/0/1628685558252?e=1707955200&v=beta&t=LdJdMWCV72xg1gFYVlRCs1kZoZ3c2sPC9QRbrn7eIoU",
+      img: "https://media.licdn.com/dms/image/C560BAQHhHYP26n7yGw/company-logo_200_200/0/1630650090781/lab_to_market_innovations_private_limited_logo?e=1720051200&v=beta&t=0zah3PySod6i_3xFySZTu_af1czu0BJxQo1I6tHsEiw",
       role: "Intern Railway Scientist",
       company: "LAB 2 MARKET (IISC), BANGALORE, KARNATAKA, INDIA",
       date: "Sept 2021 - Jan 2022",
