@@ -23,12 +23,12 @@ export const Bio = {
         {
           name: "AWS",
           image:
-            "https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_200_200/0/1670264051233/amazon_web_services_logo?e=1720051200&v=beta&t=SC9ilgpx6Rf1KY5C2ZSTbLLeF4jpLwziZ-mml6askow",
+            "https://media.licdn.com/dms/image/v2/C560BAQER_QnUTXrPJw/company-logo_200_200/company-logo_200_200/0/1670264051233/amazon_web_services_logo?e=1733356800&v=beta&t=Cp3bEmPQA2sZlmF7VJK0O1eiR21KHa_4GLVfEsQC3d8",
         },
         {
           name: "GCP",
           image:
-            "https://media.licdn.com/dms/image/C560BAQFIFLR7jxm2lg/company-logo_200_200/0/1630644546845/google_cloud_logo?e=1720051200&v=beta&t=nKoMp0M8jPy5xvRBtaaKATZ4N1TB0MONBrUx4eJq1Ik",
+            "https://media.licdn.com/dms/image/v2/C560BAQFIFLR7jxm2lg/company-logo_200_200/company-logo_200_200/0/1630644546845/google_cloud_logo?e=1733356800&v=beta&t=G3fR8I1-V4PxgOm5IvCMbeR1gl9T_Rlsacm3TPFHc8A",
         },
         {
           name: "Github Actions",
