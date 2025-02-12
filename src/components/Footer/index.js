@@ -27,7 +27,7 @@ function Footer() {
             <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
           </SocialMediaIcons>
           <Copyright>
-            &copy; 2024 Tejas Manu Srinivasan. All rights reserved.
+            &copy; 2025 Tejas Manu Srinivasan. All rights reserved.
           </Copyright>
   
         </FooterWrapper>
