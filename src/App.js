@@ -1,17 +1,22 @@
+import React from 'react';
 import { ThemeProvider } from "styled-components";
 import { useState, useEffect } from "react";
-import { darkTheme, lightTheme } from './utils/Themes.js'
-import { BrowserRouter as Router } from 'react-router-dom';
+import themes from './themes/default';
+import GlobalStyles from './themes/GlobalStyles';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skill from "./components/Skills";
+import Projects from "./components/Projects";
+import Blog from "./components/Blog";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Certificate from "./components/Certificates"
 import Footer from "./components/Footer"
 import './App.css';
-
+import BlogPost from './components/BlogPost';
+import ProjectPost from './components/ProjectPost';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -25,30 +30,46 @@ const Wrapper = styled.div`
   // clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
 
-
-function App() {
-  const [darkMode, setDarkMode] = useState(true);
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal)
+const MainContent = () => {
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-    <Router >
-      <Navbar />
-      <Body>
+    <Body>
+      <div id="about">
         <About />
+      </div>
+      <div id="skills">
         <Skill />
-      <Wrapper>
+      </div>
+      <Wrapper id="experience">
         <Experience />
       </Wrapper>
-      <Wrapper>
+      <Wrapper id="education">
         <Education />
       </Wrapper>
-      <Wrapper>
+      <Wrapper id="certifications">
         <Certificate />
       </Wrapper>
-        <Footer />
-      </Body>
-    </Router>
+      <Footer />
+    </Body>
+  );
+}
+
+function App() {
+  const [darkMode] = React.useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+  
+  return (
+    <ThemeProvider theme={darkMode ? themes.darkTheme : themes.lightTheme}>
+      <GlobalStyles />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:slug" element={<ProjectPost />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   );
 }

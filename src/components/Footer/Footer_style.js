@@ -1,15 +1,15 @@
 import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
   width: 100%;
   padding: 2rem 0;
   display: flex;
   justify-content: center;
-  background: black;
+  background: ${({ theme }) => theme.card};
 `;
 
-
-export const FooterWrapper = styled.footer`
+export const FooterWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -43,28 +43,24 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavLink = styled.a`
-color: ${({ theme }) => theme.text_primary};
+export const NavLink = styled(LinkR)`
+  color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.2s ease-in-out;
+  cursor: pointer;
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
   @media (max-width: 768px) {
     font-size: 1rem;
   }
-
-  &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
-  }
 `;
-
-
 
 export const SocialMediaIcons = styled.div`
   display: flex;
   margin-top: 1rem;
+  gap: 1rem;
 `;
 
 export const SocialMediaIcon = styled.a`
@@ -81,6 +77,6 @@ export const SocialMediaIcon = styled.a`
 export const Copyright = styled.p`
   margin-top: 1.5rem;
   font-size: 0.9rem;
-  color: ${({ theme }) => theme.soft2};
+  color: ${({ theme }) => theme.text_primary};
   text-align: center;
 `;

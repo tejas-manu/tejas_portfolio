@@ -22,9 +22,9 @@ export const NavbarContainer = styled.div`
   align-items: center;
   height: 60px;
   z-index: 1;
-  width: 50%;
+  width: 80%;
   padding: 0 24px;
-  max-width: 1200px;
+  max-width: 1400px;
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -46,9 +46,9 @@ export const Span = styled.div`
 export const NavItems = styled.ul`
     width: 100%;
     display: flex;
-    align-items: right;
-    justify-content:center;
-    gap: 32px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
     padding: 0 6px;
     list-style: none;
 
