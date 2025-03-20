@@ -274,6 +274,7 @@ export const Bio = {
         "Presentation Skills",
         "Statistics",
       ],
+      
       // doc: "https://drive.google.com/file/d/1rTKOIp_1JQ3bNiVyi3XO18MVirWjEi5m/view?usp=sharing",
     },
   ];
