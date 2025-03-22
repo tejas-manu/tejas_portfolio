@@ -4,13 +4,11 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import { education, experiences, certificate } from '../../data/constants';
+import { certificate } from '../../data/constants';
 import CertificateCard from './Certificate_card';
 import {Container, Wrapper, Title, Desc, TimelineSection} from "./Certificates_style";
 
-
-
-const index = () => {
+const Certificate = () => {
     return (
         <Container id="certifications">
             <Wrapper>
@@ -19,12 +17,18 @@ const index = () => {
                     Accomplished and certified in the following areas.
                 </Desc>
                 <TimelineSection>
-                    <Timeline>
-                        {certificate.map((certificate ,index) => (
-                            <TimelineItem>
+                    <Timeline position="right">
+                        {certificate.map((certificate, index) => (
+                            <TimelineItem key={index}>
                                 <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="primary" />
-                                    {index !== certificate.length - 1 && <TimelineConnector style={{ background: '#0078ff' }} />}
+                                    <TimelineDot 
+                                        variant="outlined" 
+                                        color="primary" 
+                                        style={{ borderWidth: '2px' }}
+                                    />
+                                    {index !== certificate.length - 1 && 
+                                        <TimelineConnector style={{ background: '#0078ff', width: '2px' }} />
+                                    }
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                                     <CertificateCard certificate={certificate}/>
@@ -32,11 +36,10 @@ const index = () => {
                             </TimelineItem>
                         ))}
                     </Timeline>
-
                 </TimelineSection>
             </Wrapper>
         </Container>
     )
 }
 
-export default index
+export default Certificate;

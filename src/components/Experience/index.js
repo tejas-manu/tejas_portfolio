@@ -1,4 +1,4 @@
-import {Container, Wrapper, Title, Desc, TimelineSection} from "./Experience_style";
+import { Container, Wrapper, Title, Desc, TimelineSection } from "./Experience_style";
 import React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -9,22 +9,27 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import ExperienceCard from './Experience_card';
 import { experiences } from '../../data/constants';
 
-
-const index = () => {
+const Experience = () => {
     return (
         <Container id="experience">
             <Wrapper>
-                <Title>Experience</Title>
+                <Title>Professional Journey</Title>
                 <Desc>
-                    During my career, I've had the opportunity to work on a variety of projects in different companies.
+                    My professional path has led me through various roles where I've developed skills and delivered impactful solutions.
                 </Desc>
                 <TimelineSection>
-                    <Timeline>
-                        {experiences.map((experience,index) => (
-                            <TimelineItem>
+                    <Timeline position="right">
+                        {experiences.map((experience, index) => (
+                            <TimelineItem key={index}>
                                 <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="primary" />
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#0078ff' }} />}
+                                    <TimelineDot 
+                                        variant="outlined" 
+                                        color="primary" 
+                                        style={{ borderWidth: '2px' }}
+                                    />
+                                    {index !== experiences.length - 1 && 
+                                        <TimelineConnector style={{ background: '#0078ff', width: '2px' }} />
+                                    }
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                                     <ExperienceCard experience={experience}/>
@@ -32,11 +37,10 @@ const index = () => {
                             </TimelineItem>
                         ))}
                     </Timeline>
-
                 </TimelineSection>
             </Wrapper>
         </Container>
-    )
-}
+    );
+};
 
-export default index
+export default Experience

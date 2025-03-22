@@ -7,7 +7,7 @@ export const Bio = {
       "I am a dynamic and motivated individual, constantly seeking fresh challenges to conquer. Driven by a passion for continuous learning, I am unwavering in my commitment to achieving high-quality results. My positive attitude and growth mindset equip me to make meaningful contributions and achieve remarkable milestones. In leadership, I excel at guiding teams with effective communication, strategic decision-making, and a focus on fostering professional growth.",
     github: "https://github.com/tejas-manu",
     resume:"https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
-    linkedin: "https://www.linkedin.com/in/tejas-manu-s-5291921a0",
+    linkedin: "https://www.linkedin.com/in/tejas-manu-srinivasan-5291921a0/",
     twitter: "https://x.com/tejas_manu?t=1QiblLdm_lEtvCW4o0KZWg&s=09",
     insta: "https://www.instagram.com/tm_tejasmanu__/",
     facebook: "https://www.facebook.com/tejas.manu.07/",
@@ -136,13 +136,18 @@ export const Bio = {
       company: "HOOD COLLEGE, FREDERICK, MD",
       date: "Feb 2024 - Present",
       desc: "Oversaw IT infrastructure, including server configuration and system optimization, ensuring seamless operations. Provided technical support to students and faculty, resolving a wide range of IT issues efficiently.",
-      resp:[
-        "Configured and maintained network infrastructure, including IP address management and troubleshooting, ensuring seamless connectivity across Hood College.",
-        "Configured, monitored, and troubleshot on-premise servers, optimizing performance and maintaining system security.",
-        "Managed and optimized IT infrastructure, including RAID servers, ensuring high availability and minimal downtime for academic and administrative operations.",
-        "Configured and deployed hardware, software, and operating systems for 50+ desktops and laptops, improving system performance for faculty and lab environments.",
-        "Troubleshot and resolved 95% of hardware/software issues within 24 hours, significantly enhancing helpdesk efficiency and system reliability.",
-      ],
+      resp: {
+        "Infrastructure Management": [
+          "Configured and maintained network infrastructure, including IP address management and troubleshooting, ensuring seamless connectivity across Hood College.",
+          "Configured, monitored, and troubleshot on-premise servers, optimizing performance and maintaining system security.",
+          "Managed and optimized IT infrastructure, including RAID servers, ensuring high availability and minimal downtime for academic and administrative operations.",
+          "Configured and deployed hardware, software, and operating systems for 50+ desktops and laptops, improving system performance for faculty and lab environments.",
+          "Troubleshot and resolved 95% of hardware/software issues within 24 hours, significantly enhancing helpdesk efficiency and system reliability.",
+        ],
+        "Technical Support": [
+          "Provided technical support to students and faculty, resolving a wide range of IT issues efficiently."
+        ]
+      },
       skills: [
         "System Administrator",
         "Server Management",
@@ -160,16 +165,37 @@ export const Bio = {
       company: "HASHEDIN BY DELOITTE, BANGALORE, KARNATAKA, INDIA",
       date: "July 2022 - July 2023",
       desc: "Performed various Devops tasks. Deployed application on multiple Cloud platforms and wrote scripts to implement CICD. Led multiple teams in an internal project which involved deploying application on AWS and GCP. Was responsible as L2 for few products in the same project.",
-      resp:[
-        "Led the deployment of a Drive-thru application and an ML-based diabetic patient readmission prediction model on AWS and GCP, increasing deployment speed by 40% and ensuring scalability and reliability.",
+      resp:{
+        "Cloud Deployment & Automation": [
+          "Led the deployment of a Restaurant Service application and an ML-based diabetic patient readmission prediction model on AWS and GCP.",
+          "Increased deployment speed by 40% while ensuring scalability and reliability.",
+          "Built and deployed cloud-native applications, ensuring seamless integration and production readiness.",
+          "Implemented CI/CD automation pipelines, reducing deployment time by 50% and streamlining software delivery."
+        ],
+        "Security & Identity Management": [
+          "Spearheaded the adoption of OpenID Connect (OIDC) to enhance security and reduce multi-cloud identity vulnerabilities by 35%.",
+          "Managed cloud security and compliance, automating security patching, vulnerability assessments, and access controls."
+        ],
+        "Cloud Architecture & Infrastructure as Code": [
+          "Designed and optimized cloud architecture, implementing Infrastructure as Code (IaC) with Terraform, Ansible, and AWS CDK.",
+          "Reduced manual configuration time by 60% while improving scalability and consistency.",
+          "Deployed and managed Kubernetes clusters, Docker containers, and serverless architectures to optimize performance."
+        ],
+        "Leadership & Team Contributions": [
+          "Led and mentored a team of 5 DevOps Engineers on the Relay Project, implementing a mono repo setup for 30+ projects.",
+          "Reduced repository management time by 25% and earned a Spot Award for leadership."
+        ]
+      },
+      // [
+        // "Led the deployment of a Drive-thru application and an ML-based diabetic patient readmission prediction model on AWS and GCP, increasing deployment speed by 40% and ensuring scalability and reliability.",
         // "Worked in the R&D unit, driving Red Hat OpenShift adoption to bring in more enterprise clients.",
-        "Collaborated with a team of developers in building and deploying cloud-native applications, ensuring seamless integration and production readiness.",
-        "Implemented CI/CD automation pipelines, reducing deployment time by 50% and streamlining software delivery processes.",
-        "Spearheaded the adoption of OpenID Connect (OIDC), enhancing security and reducing multi-cloud identity-related vulnerabilities by 35%.",
-        "Designed and optimized cloud architecture, implementing Infrastructure as Code (IaC) using Terraform, Ansible, and AWS CDK, reducing manual configuration time by 60% while improving scalability and consistency.",
-        "Led and mentored a team of 5 DevOps Engineers on the Relay Project, implementing a mono repo setup for 30+ projects, reducing repository management time by 25%, and earning a Spot Award for leadership.",
-        "Managed cloud security and compliance initiatives, ensuring that infrastructure met industry standards by automating security patching, vulnerability assessments, and access controls.",
-        "Strong expertise in containerization and orchestration, deploying and managing Kubernetes clusters, Docker containers, and serverless architectures to optimize performance and resource utilization.",
+        // "Collaborated with a team of developers in building and deploying cloud-native applications, ensuring seamless integration and production readiness.",
+        // "Implemented CI/CD automation pipelines, reducing deployment time by 50% and streamlining software delivery processes.",
+        // "Spearheaded the adoption of OpenID Connect (OIDC), enhancing security and reducing multi-cloud identity-related vulnerabilities by 35%.",
+        // "Designed and optimized cloud architecture, implementing Infrastructure as Code (IaC) using Terraform, Ansible, and AWS CDK, reducing manual configuration time by 60% while improving scalability and consistency.",
+        // "Led and mentored a team of 5 DevOps Engineers on the Relay Project, implementing a mono repo setup for 30+ projects, reducing repository management time by 25%, and earning a Spot Award for leadership.",
+        // "Managed cloud security and compliance initiatives, ensuring that infrastructure met industry standards by automating security patching, vulnerability assessments, and access controls.",
+        // "Strong expertise in containerization and orchestration, deploying and managing Kubernetes clusters, Docker containers, and serverless architectures to optimize performance and resource utilization.",
 
 
         // "Spearheaded the establishment of CI/CD pipelines, reducing deployment times by 50% and streamlining development workflows.",
@@ -184,7 +210,7 @@ export const Bio = {
         // "Utilized Python, Linux, and shell scripting to optimize integration and automation processes.",
         // "Actively maintained and monitored deployed applications, ensuring their stability, performance, and uptime.",
         // "Worked collaboratively with cross-functional teams, integrating DevOps practices into the software development lifecycle.",
-      ],
+      // ],
       skills: [
         "CI/CD Tools",
         "AWS",
@@ -216,13 +242,28 @@ export const Bio = {
       company: "HASHEDIN BY DELOITTE, BANGALORE, KARNATAKA, INDIA",
       date: "March 2022 - July 2022",
       desc: "Executed diverse testing procedures to assess application performance and pinpoint defects. Contributed to quality assurance by meticulously validating application functionality. Implemented test automation using a variety of testing tools to streamline processes and bolster overall testing effectiveness",
-      resp:[
+      resp:{
+        "Microservices Development & Quality Assurance": [
+          "Developed and enhanced microservices, improving application scalability by 40% and reducing load times by 20%.",
+          "Automated test cases using Selenium, JUnit, and Postman, increasing testing speed by 30% and ensuring high-quality releases.",
+          "Performed code reviews, enforcing best practices and maintaining code quality across development teams."
+        ],
+        "CI/CD & Cloud Deployments": [
+          "Integrated deployment pipelines and assisted with cloud deployments, ensuring seamless CI/CD automation.",
+          "Enabled quick rollbacks when necessary to maintain system stability."
+        ],
+        "Leadership & Project Management": [
+          "Led a team of 6 engineers in the successful delivery of a Medicare Project, completing it ahead of schedule.",
+          "Achieved 100% of objectives and received positive leadership feedback."
+        ]
+      },
+      // [
 
-        "Developed and enhanced microservices, improving application scalability by 40% and reducing load times by 20%.",
-        "Automated test cases using Selenium, JUnit, and Postman, increasing testing speed by 30% and ensuring faster releases with high-quality standards.",
-        "Led a team of 6 engineers in the successful delivery of a Medicare Project, completing the project ahead of schedule, achieving 100% of objectives, and receiving positive feedback for leadership.",
-        "Integrated deployment pipelines and assisted with cloud deployments, ensuring seamless CI/CD automation and quick rollbacks when necessary.",
-        "Performed code reviews, providing guidance on best practices and ensuring code quality across development teams.",
+        // "Developed and enhanced microservices, improving application scalability by 40% and reducing load times by 20%.",
+        // "Automated test cases using Selenium, JUnit, and Postman, increasing testing speed by 30% and ensuring faster releases with high-quality standards.",
+        // "Led a team of 6 engineers in the successful delivery of a Medicare Project, completing the project ahead of schedule, achieving 100% of objectives, and receiving positive feedback for leadership.",
+        // "Integrated deployment pipelines and assisted with cloud deployments, ensuring seamless CI/CD automation and quick rollbacks when necessary.",
+        // "Performed code reviews, providing guidance on best practices and ensuring code quality across development teams.",
 
         // "Developed and tested software applications using diverse frameworks and tools, ensuring high performance and reliability.",
         // "Contributed to the creation and execution of robust test plans, improving application quality and stability.",
@@ -230,7 +271,7 @@ export const Bio = {
         // "Developed and optimized microservices, enhancing application scalability, performance, and maintainability.",
         // "Successfully led a team of 6 in a Medicare Project, completing the project ahead of schedule, achieving 100% of objectives, and receiving positive feedback for leadership and project management skills..",
         // "Engaged in continuous learning of emerging testing tools and methodologies, staying current with industry trends and best practices.",
-      ],
+      // ],
       skills: [
         "Python",
         "Selenium",
@@ -250,13 +291,27 @@ export const Bio = {
       company: "LAB 2 MARKET (IISC), BANGALORE, KARNATAKA, INDIA",
       date: "Sept 2021 - Jan 2022",
       desc: "During my internship as a Railway Scientist, I demonstrated proficiency in developing Python scripts tailored for extracting data from FBG sensors. Utilizing analytical tools such as pandas and matplotlib, I conducted in-depth analyses to assess the health of train wheels. I excelled in translating complex technical concepts into accessible information for clients, emphasizing the significant impact on reducing railway accidents and improving journey safety.",
-      resp:[
-          "Developed an application integrating a Machine Learning model to analyze faulty wheels using sensor data collected from railway tracks, improving fault detection accuracy.",
-          "Wrote automation scripts to streamline the functioning of sensor units on-site, ensuring the accurate transmission of sensor readings for further analysis.",
-          "Worked in the R&D unit to optimize and enhance the existing fault detection system, contributing to train safety and accident prevention.",
-          "Identified anomalies in train wheel sensor data using advanced techniques such as Z-Score, moving averages, K-means clustering, and scipy peak detection, achieving 98% fault detection accuracy.",
-          "Reduced false positives in train wheel impact load detection by 15%, significantly outperforming previous detection methods.",
-          "Assisted in deployment, solving deployment issues and handling the networking component, ensuring smooth integration into production environments.",
+      resp:{
+        "Application Development & Machine Learning Integration": [
+          "Developed an application integrating a Machine Learning model to analyze faulty wheels using sensor data from railway tracks, improving fault detection accuracy.",
+          "Optimized and enhanced the fault detection system, contributing to train safety and accident prevention."
+        ],
+        "Data Analysis & Fault Detection": [
+          "Identified anomalies in train wheel sensor data using techniques like Z-Score, moving averages, K-means clustering, and scipy peak detection, achieving 98% fault detection accuracy.",
+          "Reduced false positives in train wheel impact load detection by 15%, significantly outperforming previous methods."
+        ],
+        "Automation & Deployment": [
+          "Wrote automation scripts to streamline the functioning of sensor units on-site, ensuring accurate transmission of sensor readings.",
+          "Assisted in deployment, solving issues and handling networking components to ensure smooth production integration."
+        ]
+      },
+      // [
+      //     "Developed an application integrating a Machine Learning model to analyze faulty wheels using sensor data collected from railway tracks, improving fault detection accuracy.",
+      //     "Wrote automation scripts to streamline the functioning of sensor units on-site, ensuring the accurate transmission of sensor readings for further analysis.",
+      //     "Worked in the R&D unit to optimize and enhance the existing fault detection system, contributing to train safety and accident prevention.",
+      //     "Identified anomalies in train wheel sensor data using advanced techniques such as Z-Score, moving averages, K-means clustering, and scipy peak detection, achieving 98% fault detection accuracy.",
+      //     "Reduced false positives in train wheel impact load detection by 15%, significantly outperforming previous detection methods.",
+      //     "Assisted in deployment, solving deployment issues and handling the networking component, ensuring smooth integration into production environments.",
 
 
         // "Developed Python algorithms for real-time sensor data analysis, utilizing Pandas and Matplotlib for effective data processing and visualization.",
@@ -264,7 +319,7 @@ export const Bio = {
         // "Utilized data plotting techniques to evaluate train wheel integrity, contributing to system reliability and performance.",
         // "Created Python scripts automating the detection of faulty wheels, triggering alerts with specific wheel numbers.",
         // "Conducted diverse analyses on the dataset to explore potential alternative applications for sensor data.",
-      ],
+      // ],
       skills: [
         "Python",
         "Pandas",

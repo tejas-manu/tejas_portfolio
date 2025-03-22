@@ -4,13 +4,11 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import { education, experiences } from '../../data/constants';
+import { education } from '../../data/constants';
 import EducationCard from './Education_card';
 import {Container, Wrapper, Title, Desc, TimelineSection} from "./Education_style"
 
-
-
-const index = () => {
+const Education = () => {
     return (
         <Container id="education">
             <Wrapper>
@@ -19,24 +17,29 @@ const index = () => {
                     My education has been a voyage of learning about myself and expanding my horizons. Below are the details of my educational journey.
                 </Desc>
                 <TimelineSection>
-                    <Timeline>
-                        {education.map((education,index) => (
-                            <TimelineItem>
+                    <Timeline position="right">
+                        {education.map((education, index) => (
+                            <TimelineItem key={index}>
+                                <TimelineSeparator>
+                                    <TimelineDot 
+                                        variant="outlined" 
+                                        color="primary" 
+                                        style={{ borderWidth: '2px' }}
+                                    />
+                                    {index !== education.length - 1 && 
+                                        <TimelineConnector style={{ background: '#0078ff', width: '2px' }} />
+                                    }
+                                </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                                     <EducationCard education={education}/>
                                 </TimelineContent>
-                                <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="primary" />
-                                    {index !== education.length - 1 && <TimelineConnector style={{ background: '#0078ff' }} />}
-                                </TimelineSeparator>
                             </TimelineItem>
                         ))}
                     </Timeline>
-
                 </TimelineSection>
             </Wrapper>
         </Container>
     )
 }
 
-export default index
+export default Education;

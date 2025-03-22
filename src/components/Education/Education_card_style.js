@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 export const Document = styled.img`
@@ -26,62 +25,55 @@ export const Description = styled.div`
 `
 
 export const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
 `
 
 export const Card = styled.div`
-    width: 900px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 120, 255, 0.15) 0px 4px 24px;
-    padding: 12px 16px;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
+  width: 900px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease-in-out;
+  background: ${({ theme }) => theme.card_light};
+  box-shadow: 0px 5px 20px rgba(0, 120, 255, 0.1);
+  border-left: 4px solid #0078ff;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 120, 255, 0.2);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    padding: 16px;
+    width: 300px;
+  }
+  
+  &.expanded ${Document} {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
-    }
-    @media only screen and (max-width: 768px){
-        padding: 10px;
-        gap: 8px;
-        width: 300px;
-    }
-
-    &:hover ${Document}{
-        display: flex;
-    }
-
-    &:hover ${Span}{
-        overflow: visible;
-        -webkit-line-clamp: unset;
-
-    }
-    border: 0.1px solid #0078ff;
+  }
 `
 
 export const Top = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px
+  display: flex;
+  gap: 16px;
+  align-items: center;
 `
 
 export const Image = styled.img`
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 4px;
+  border: 2px solid rgba(0, 120, 255, 0.5);
+  
+  @media only screen and (max-width: 768px) {
     height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
-    }
+    width: 50px;
+  }
 `
 
 export const Body = styled.div`
@@ -92,12 +84,13 @@ export const Body = styled.div`
 
 
 export const Name = styled.div`
+  font-size: 22px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary};
+  
+  @media only screen and (max-width: 768px) {
     font-size: 18px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 14px;
-    }
+  }
 `
 
 export const Degree = styled.div`
@@ -126,3 +119,23 @@ export const Grade = styled.div`
         font-size: 12px;
     }
 `
+
+export const ExpandButton = styled.button`
+  background: transparent;
+  border: none;
+  color: ${({ theme }) => theme.text_primary};
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(0, 120, 255, 0.1);
+  }
+`;

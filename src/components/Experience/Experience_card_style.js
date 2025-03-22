@@ -27,90 +27,96 @@ export const Description = styled.div`
 `
 
 export const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
-text-align:justify;
+  overflow: hidden;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+  
+  &.expanded {
+    overflow: visible;
+    -webkit-line-clamp: unset;
+  }
 `
 export const ItemWrapperResp = styled.div`
-    display: -webkit-box;
-    overflow: hidden;
-    max-width: 100%;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    flex-wrap: block;
-    gap: 4px;   
+  display: -webkit-box;
+  overflow: hidden;
+  max-width: 100%;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  flex-wrap: block;
+  gap: 4px;
+  transition: all 0.3s ease;
+  
+  &.expanded {
+    overflow: visible;
+    -webkit-line-clamp: unset;
+  }
 `
 
 export const Resp = styled.div`
     font-size: 15px;
     font-weight: 400;
     text-align: justify;
-
     color: ${({ theme }) => theme.text_primary + 99};
+    margin-left: 20px;
+    position: relative;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
 `
 
 export const Card = styled.div`
-    width: 900px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    padding: 12px 16px;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
+  width: 900px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease-in-out;
+  background: ${({ theme }) => theme.card_light};
+  box-shadow: 0px 5px 20px rgba(0, 120, 255, 0.1);
+  border-left: 4px solid #0078ff;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 120, 255, 0.2);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    padding: 16px;
+    width: 300px;
+  }
+  
+  &.expanded ${Document} {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
-    }
-    @media only screen and (max-width: 768px){
-        padding: 10px;
-        gap: 8px;
-        width: 300px;
-    }
-
-    &:hover ${Document}{
-        display: flex;
-    }
-    &:hover ${ItemWrapperResp}{
-        overflow: visible;
-        -webkit-line-clamp: unset;
-
-    }
-    &:hover ${Span}{
-        overflow: visible;
-        -webkit-line-clamp: unset;
-
-    }
-
-    border: 0.1px solid #0078ff;
-    box-shadow: rgba(0, 120, 255, 0.15) 0px 4px 24px;
+  }
 `
 
 export const Top = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px
+  display: flex;
+  gap: 16px;
+  align-items: center;
 `
 
 export const Image = styled.img`
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 4px;
+  border: 2px solid rgba(0, 120, 255, 0.5);
+  
+  @media only screen and (max-width: 768px) {
     height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
-    }
+    width: 50px;
+  }
 `
 
 export const Body = styled.div`
@@ -121,12 +127,13 @@ export const Body = styled.div`
 
 
 export const Role = styled.div`
+  font-size: 22px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary};
+  
+  @media only screen and (max-width: 768px) {
     font-size: 18px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 14px;
-    }
+  }
 `
 
 export const Company = styled.div`
@@ -169,6 +176,54 @@ export const Skill = styled.div`
         font-size: 12px;
     }
 `
+
+export const SectionTitle = styled.div`
+  font-size: 16px;
+  font-weight: 600;
+  color: #0078ff;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #0078ff;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+`
+
+export const RespHeading = styled.div`
+  font-size: 16px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_primary};
+  margin-top: 12px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+`
+
+export const ExpandButton = styled.button`
+  background: transparent;
+  border: none;
+  color: ${({ theme }) => theme.text_primary};
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(0, 120, 255, 0.1);
+  }
+`;
 
 
 
