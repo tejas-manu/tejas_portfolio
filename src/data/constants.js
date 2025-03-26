@@ -11,7 +11,12 @@ export const Bio = {
     twitter: "https://x.com/tejas_manu?t=1QiblLdm_lEtvCW4o0KZWg&s=09",
     insta: "https://www.instagram.com/tm_tejasmanu__/",
     facebook: "https://www.facebook.com/tejas.manu.07/",
+    blog: "https://yourblogurl.com",
   };
+
+  // export const blogs = {
+  //   blog: "https://yourblogurl.com",
+  // };
   
   // instagram : https://instagram.com/tm_tejasmanu__?igshid=OGQ5ZDc2ODk2ZA==
   // facebook : https://www.facebook.com/tejas.manu.07?mibextid=ZbWKwL

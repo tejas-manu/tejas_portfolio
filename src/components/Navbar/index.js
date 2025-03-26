@@ -2,6 +2,7 @@ import React from 'react'
 import { Nav, NavLink, NavbarContainer, NavItems, MobileIcon, MobileMenu, MobileLink } from './Navbar_style'
 import { FaBars } from 'react-icons/fa';
 import { useTheme } from 'styled-components';
+import { Bio } from '../../data/constants';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#education'>Education</NavLink>
           <NavLink href='#certifications'>Certifications</NavLink>
-          {/* <NavLink href='#blog'>Blog</NavLink> */}
+          <NavLink href={Bio.blog}>Blog</NavLink>
         </NavItems>
         {
           isOpen &&
@@ -40,9 +41,9 @@ const Navbar = () => {
             <MobileLink href='#certifications' onClick={() => {
               setIsOpen(!isOpen)
             }}>Certifications</MobileLink>
-            {/* <MobileLink href='#blog' onClick={() => {
+            <MobileLink href={Bio.blog} onClick={() => {
               setIsOpen(!isOpen)
-            }}>Blog</MobileLink> */}
+            }}>Blog</MobileLink>
           </MobileMenu>
         }
       </NavbarContainer>
